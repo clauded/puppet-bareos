@@ -14,5 +14,6 @@
 #
 class bareos::repository inherits bareos {
   # we use a local mirror of repos
-  include site::repo::bareos
+  class { 'site::repo::bareos':
+  }
 }
