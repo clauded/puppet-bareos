@@ -37,6 +37,7 @@ class bareos::params {
   $database_backend = 'mysql'
 
   ## Common variables
+  $config_dir_purge = false
   $config_dir = $::operatingsystem ? {
     default => '/etc/bareos',
   }
